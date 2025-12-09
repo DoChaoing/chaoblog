@@ -38,6 +38,12 @@ importers:
       hexo-theme-kira:
         specifier: ^1.4.9
         version: 1.4.9
+      hexo-wordcount:
+        specifier: ^6.0.1
+        version: 6.0.1
+      wordcount:
+        specifier: ^1.1.1
+        version: 1.1.1
 
 packages:
 
@@ -1037,6 +1043,10 @@ packages:
     engines: {node: '>= 12'}
     hasBin: true
 
+  match-words@0.1.1:
+    resolution: {integrity: sha512-cywKmeeoNFi//GGLHZ+Zb/M3ZX0VTwJjotLMWhDZoBRtSbw3kraIuIxw7P/xy+t5NSAMHNVeljM63WRBYQ563w==}
+    engines: {node: '>=0.10.0'}
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
@@ -1649,6 +1659,14 @@ packages:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
     hasBin: true
+
+  word-regex@0.1.2:
+    resolution: {integrity: sha512-4jK/OibPeindR9o/sryObhVWNgD2LJCMJFWEME69p48sEYpE9axfyjHK+RqYcOeoEoqcqJEPE9iMdiiFpXHo0Q==}
+    engines: {node: '>=0.10.0'}
+
+  wordcount@1.1.1:
+    resolution: {integrity: sha512-3PzTv5i9Zq+DYjYFs9mybWjz3uxd19pzZEhroS0C/424IxrxWeqd+0Qt/R+UjydSWutYjaQSTklO9EBZ6YsiWg==}
+    engines: {node: '>=0.10.0'}
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
@@ -2852,6 +2870,10 @@ snapshots:
 
   marked@4.3.0: {}
 
+  match-words@0.1.1:
+    dependencies:
+      word-regex: 0.1.2
+
   math-intrinsics@1.1.0: {}
 
   math-random@1.0.4: {}
@@ -3494,6 +3516,12 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
+
+  word-regex@0.1.2: {}
+
+  wordcount@1.1.1:
+    dependencies:
+      match-words: 0.1.1
 
   wrappy@1.0.2: {}
 
