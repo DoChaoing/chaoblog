@@ -1,4 +1,5 @@
-title: AIGC 技术发展走向
+title: AIGC现状
+updated: '2025-12-09 11:13:18'
 ---
 # AIGC 技术发展走向  
 
