@@ -102,7 +102,9 @@ theme: kira
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/DoChaoing/dochaoing.github.io.git
+  branch: main
 
 aplayer:
   asset_inject: false # 禁止 aplayer 注入资源

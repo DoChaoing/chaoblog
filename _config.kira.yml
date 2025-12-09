@@ -106,10 +106,10 @@ gitalk:
 # https://giscus.app/zh-CN 可以在这个网站上手动选择配置填到下方对应位置
 giscus:
     active: true # 是否启用 giscus
-    repo: -your github username-/-your giscus repo- # 存放评论的 discus 所在的 repo
-    repoID: -your giscus repo ID- # GitHub repo ID
+    repo: DoChaoing/dochaoing.github.io # 存放评论的 discus 所在的 repo
+    repoID: R_kgDOQkK0BA # GitHub repo ID
     category: Announcements # 选择新 discussions 所在的分类
-    categoryID: -giscus category id- # 分类 ID
+    categoryID: DIC_kwDOQkK0BM4Czj3r # 分类 ID
     mapping: pathname # pathname, url, title, og:title, specific, number
     # term: # abc 123 # specific | number
     theme: light
