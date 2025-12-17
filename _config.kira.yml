@@ -1,6 +1,7 @@
 avatar: https://kira.host/assets/Pictures/Others/20220922230447.jpg # 网站 Logo
 background: # 既是博客的背景，又是文章默认头图
-    path: https://kira.host/assets/Pictures/Others/-f0d5cc34c6e5aa7_compressed.jpg
+    # path: https://kira.host/assets/Pictures/Others/-f0d5cc34c6e5aa7_compressed.jpg
+    path: https://cdn.pixabay.com/photo/2023/11/10/16/05/anime-8379662_960_720.jpg
     width: 1280
     height: 720
 favicon:
