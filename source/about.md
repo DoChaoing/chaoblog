@@ -64,4 +64,4 @@ open https://dochaoing.github.io
 
 ---
 
-**Tech Stack of This Blog:** [Hexo](https://hexo.io/) + [Kira Theme](https://github.com/ch1nyi/hexo-theme-kira) + [Giscus](https://giscus.app/) · Hosted on GitHub Pages
+**Tech Stack of This Blog:** [Hexo](https://hexo.io/) + [Cyberpunk2077 Theme](https://github.com/ceeyu/hexo-theme-cyberpunk2077) + [Giscus](https://giscus.app/) · Hosted on GitHub Pages
