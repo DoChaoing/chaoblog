@@ -9,7 +9,8 @@ tags:
   - Automation
 categories:
   - AI Trends
-cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200
+photos:
+  - https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200
 ---
 
 > **TL;DR** — LLMs answer questions. Agents *do* things. This is the paradigm shift of 2025. 12 min read.
