@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: cyberpunk2077
+theme: fluid
 
 # Marked renderer - 禁用内置代码高亮，使用 Prism.js
 marked:

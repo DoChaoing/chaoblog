@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@adobe/css-tools':
+        specifier: ^4.4.4
+        version: 4.4.4
       hexo:
         specifier: ^7.3.0
         version: 7.3.0(chokidar@3.6.0)
@@ -41,6 +44,9 @@ importers:
       hexo-server:
         specifier: ^3.0.0
         version: 3.0.0
+      hexo-theme-fluid:
+        specifier: ^1.9.9
+        version: 1.9.9(nunjucks@3.2.4(chokidar@3.6.0))
       hexo-theme-kira:
         specifier: ^1.4.9
         version: 1.4.9
@@ -52,6 +58,9 @@ importers:
         version: 1.1.1
 
 packages:
+
+  '@adobe/css-tools@4.4.4':
+    resolution: {integrity: sha512-Elp+iwUx5rN5+Y8xLt5/GRoG20WGoDCQ/1Fb+1LiGtvwbDavuSk0jhD/eZdckHAuzcDzccnkv+rEjyWfRx18gg==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -801,6 +810,12 @@ packages:
 
   hexo-tag-aplayer@3.0.4:
     resolution: {integrity: sha512-r7Onb2MnV2KZUN/Lz6r4fs3Pi14EZtmWqtwK+NNS9pPiad9WRgmjgtY7eI2aY2aKT/bdSSIrGeni5AyG/v2EwA==}
+
+  hexo-theme-fluid@1.9.9:
+    resolution: {integrity: sha512-Z1EgMiIOeVpaNYQsjUi1PWIA9li/7bkUK+WEL8ehV5uj7nU3VjkAPqSrJDCLV4fDdwFX8HBDM3CaNfl14VKx3g==}
+    engines: {node: '>=8.10.0'}
+    peerDependencies:
+      nunjucks: ^3.0.0
 
   hexo-theme-kira@1.4.9:
     resolution: {integrity: sha512-iSGx/cb+TBqTnHbKSvrCUlt71/o67D/ypIlU7wxsgSAIoeLiIc0gTOffnkXasmPxdRKWMTj13acriZeGT5HOdg==}
@@ -1745,6 +1760,8 @@ packages:
 
 snapshots:
 
+  '@adobe/css-tools@4.4.4': {}
+
   '@tootallnate/once@2.0.0': {}
 
   '@types/trusted-types@2.0.7':
@@ -2623,6 +2640,10 @@ snapshots:
       meting: 1.2.0
     transitivePeerDependencies:
       - supports-color
+
+  hexo-theme-fluid@1.9.9(nunjucks@3.2.4(chokidar@3.6.0)):
+    dependencies:
+      nunjucks: 3.2.4(chokidar@3.6.0)
 
   hexo-theme-kira@1.4.9:
     dependencies:
