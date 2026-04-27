@@ -6,7 +6,14 @@
 title: NeuralFlow
 subtitle: 'Exploring AI · Code · Future'
 description: 'AI Engineer | Full-Stack Developer | Open Source Enthusiast'
-keywords: AI, Machine Learning, LLM, Claude, GPT, Programming, Tech Blog
+keywords:
+  - AI
+  - Machine Learning
+  - LLM
+  - Claude
+  - GPT
+  - Programming
+  - Tech Blog
 author: Chao
 language: en
 timezone: ''
@@ -97,7 +104,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: vivia
+theme: tranquilpeak
 
 # Marked renderer - 禁用内置代码高亮，使用 Prism.js
 marked:
