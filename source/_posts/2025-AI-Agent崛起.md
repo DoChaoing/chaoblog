@@ -10,7 +10,7 @@ tags:
 categories:
   - AI Trends
 photos:
-  - https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200
+  - https://images.unsplash.com/photo-1675271591211-930246f69bec?w=1200
 ---
 
 > **TL;DR** — LLMs answer questions. Agents *do* things. This is the paradigm shift of 2025. 12 min read.

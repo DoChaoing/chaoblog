@@ -1,0 +1,174 @@
+#! ---------------------------------------------------------------
+#! Aurora Theme for Hexo - 个性化配置
+#! ---------------------------------------------------------------
+
+#! ---------------------------------------------------------------
+#! Site Configs
+#! ---------------------------------------------------------------
+site:
+  subtitle: NeuralFlow
+  author: Chao
+  nick: Chao
+  description: 'AI Engineer | Full-Stack Developer | Open Source Enthusiast'
+  link: '/'
+  language: en
+  multi_language: false
+  logo: 
+  avatar: 
+  beian:
+    number: ''
+    link: ''
+  police_beian:
+    number: ''
+    link: ''
+  started_date: '2025-01-01'
+  pathSlug: 'slug'
+
+#! ---------------------------------------------------------------
+#! Authors Configs
+#! ---------------------------------------------------------------
+authors:
+  Chao:
+    name: Chao
+    avatar: 
+    link: https://github.com/DoChaoing
+    description: 'AI Engineer | Full-Stack Developer'
+    socials:
+      github: https://github.com/DoChaoing
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#! ---------------------------------------------------------------
+menu:
+  About: true
+  Tags: true
+  Archives: true
+  Friends: true
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: true
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  feature: true
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! ---------------------------------------------------------------
+socials:
+  customs:
+    github:
+      icon: fab fa-github
+      link: https://github.com/DoChaoing
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: cn
+  favicon:
+  description: 'Exploring AI · Code · Future'
+  keywords: 'AI, Machine Learning, LLM, Claude, GPT, Programming, Tech Blog'
+  author: Chao
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! ---------------------------------------------------------------
+gitalk:
+  enable: false
+  autoExpand: true
+  clientID: ''
+  clientSecret: ''
+  repo: ''
+  owner: ''
+  admin: ['']
+  id: uid
+  language: en
+  distractionFreeMode: true
+  recentComment: true
+  proxy: ''
+
+valine:
+  enable: false
+  app_id:
+  app_key:
+  avatar: ''
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: ['nick', 'mail']
+  admin: ''
+  recentComment: true
+
+twikoo:
+  enable: false
+  recentComment: true
+  envId: xxxxxxxxxxxxxxx
+  lang: 'en'
+
+waline:
+  enable: false
+  recentComment: true
+  reaction: false
+  login: 'disable'
+  meta: ['nick', 'mail']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  wordLimit: 0
+  imageUploader: false
+  pageSize: 10
+  serverURL: ''
+
+busuanzi:
+  enable: true
+
+copy_protection:
+  enable: true
+  author:
+    cn: 作者
+    en: Author
+  link:
+    cn: 本文来自于
+    en: Article is from
+  license:
+    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
+
+#! ---------------------------------------------------------------
+#! Aurora Bot
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: false
+  locale: en
+  bot_type: dia
+  tips:
+
+#! ---------------------------------------------------------------
+#! Injections
+#! ---------------------------------------------------------------
+injects:
+  scripts:
+  css:
+
+#! ---------------------------------------------------------------
+#! Footer links
+#! ---------------------------------------------------------------
+footer_links:
+  - title: Links
+    links:
+      - title: GitHub
+        url: https://github.com/DoChaoing
+
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  backgroundColor: "#1a1a1a"
