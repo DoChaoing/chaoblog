@@ -1,0 +1,170 @@
+################## System ##################
+
+search:
+  provider: local
+  path:
+    page: search
+    index_file: search-index.json
+  includes:
+    - post
+    - page
+  content: true
+
+check_update: false
+
+################## Appearance ##################
+
+image:
+  favicon: "/favicon.ico"
+  avatar: "https://avatars.githubusercontent.com/u/16796652"
+  banner:
+    light: "https://images.unsplash.com/photo-1518770660439-4636190af2dd?w=1600"
+    dark: "https://images.unsplash.com/photo-1518770660439-4636190af2dd?w=1600"
+  background:
+    light: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1800"
+    dark: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1800"
+  about:
+    light: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+    dark: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+
+nav:
+  auto_hide: true
+  items:
+    - label: Home
+      icon: home
+      url: /
+    - label: Archives
+      icon: archive
+      url: /archives/
+    - label: Categories
+      icon: folder
+      url: /categories/
+    - label: Tags
+      icon: tags
+      url: /tags/
+    - label: About
+      icon: user
+      url: /about.html
+    - label: Friends
+      icon: link
+      url: /friends.html
+
+index:
+  style: card
+
+footer:
+  links:
+    - icon: github
+      link: https://github.com/DoChaoing
+      addition: target="_blank" rel="nofollow"
+    - icon: rss
+      link: /atom.xml
+  components:
+    uptime:
+      since: "2025/04/22 00:00:00"
+      text: "Site running for"
+    author:
+      homepage: "https://github.com/DoChaoing"
+    additional:
+      - - Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a>
+        - Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank" rel="nofollow">Kratos-Rebirth</a>
+
+posts:
+  default_cover: "/images/default.webp"
+  donate: false
+  share: true
+  word_count:
+    enable: true
+    threshold: 1500
+    estimate_wavy: true
+  toc:
+    desktop:
+      options:
+        list_number: false
+    mobile:
+      enable: true
+      options:
+        list_number: true
+
+pages:
+  donate: false
+  share: true
+
+syntax_highlighter:
+  theme: night-eighties
+
+sidebar:
+  location: right
+  widgets:
+    - about
+    - splitter
+    - toc
+    - category
+    - tagcloud
+    - posts
+
+share:
+  enable: true
+  title: "Share"
+  message: "Share this post"
+  platforms: []
+
+donate:
+  enable: false
+  title: "Donate"
+  message: "Thanks for your support!"
+  qrcode_placeholder: ""
+  platforms: []
+
+copyright_notice:
+  in_page:
+    enable_at:
+      - post
+      - page
+    template: This work is licensed under <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+  append_copy:
+    enable: true
+    threshold: 150
+    template: |
+      $NEWLINE
+      -------------------------
+      Author: $AUTHOR
+      Source: $TITLE
+      Link: $LINK
+
+comments:
+  core:
+    enable_at: []
+    template:
+      _shared: ""
+      index: ""
+      post: ""
+      page: ""
+  count:
+    enable_at: []
+    template:
+      _shared: ""
+      index: ""
+      post: ""
+  path_hasher: "md5"
+
+visit_count:
+  enable_at: []
+  template:
+    _shared: ""
+    index: ""
+    post: ""
+  path_hasher: "md5"
+
+additional_injections:
+  head: |
+    <link rel="stylesheet" href="/css/kratos-play.css">
+  footer: ""
+  after_footer: |
+    <script defer src="/js/kratos-play.js"></script>
+  tools: |
+    <div class="box nf-inspire-box">
+      <a href="#" data-nf-inspire aria-label="Inspiration">
+        <span class="fa fa-magic"></span>
+      </a>
+    </div>

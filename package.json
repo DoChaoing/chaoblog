@@ -31,6 +31,7 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-aurora": "^2.5.3",
+    "hexo-theme-kratos-rebirth": "^3.0.1",
     "hexo-theme-landscape": "^1.1.0",
     "hexo-theme-nexmoe": "^4.2.2",
     "hexo-util": "^4.0.0",

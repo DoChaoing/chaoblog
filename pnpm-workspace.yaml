@@ -1,4 +1,13 @@
+packages:
+  - "."
+
+allowBuilds:
+  hexo-util: true
+  inferno: true
+  vue-demi: true
 onlyBuiltDependencies:
   - core-js
   - fsevents
   - hexo-util
+  - inferno
+  - vue-demi

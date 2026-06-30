@@ -65,6 +65,9 @@ importers:
       hexo-theme-aurora:
         specifier: ^2.5.3
         version: 2.5.3
+      hexo-theme-kratos-rebirth:
+        specifier: ^3.0.1
+        version: 3.0.1
       hexo-theme-landscape:
         specifier: ^1.1.0
         version: 1.1.0
@@ -1307,6 +1310,9 @@ packages:
 
   hexo-theme-aurora@2.5.3:
     resolution: {integrity: sha512-XYe7kcXSGp+cJIWgkKn0Uv/RwY1bIJdQAtJFC+KZRsodHhw1sfsQ4zrroX+07tNy0Z0DG5rObzGzPDWfrCuNUA==}
+
+  hexo-theme-kratos-rebirth@3.0.1:
+    resolution: {integrity: sha512-+6c5TKK2MK6LPhT4vgQj1h1nsvCgqW7VR6uGJ/ulzcxLCffMTUQFJB7d4PUIE+AD2LdUM9rLcCS9FqY6yusEmw==}
 
   hexo-theme-landscape@1.1.0:
     resolution: {integrity: sha512-nszjixBEiEDZjf7glAGbHg0nKGHZdUDwzFVVdRDeu4FeHfGcY5CZNl9sF4vSligjnD8IwFXpDfx5E+GRmNKvWg==}
@@ -3719,6 +3725,8 @@ snapshots:
       - '@vue/composition-api'
       - debug
       - typescript
+
+  hexo-theme-kratos-rebirth@3.0.1: {}
 
   hexo-theme-landscape@1.1.0: {}
 
