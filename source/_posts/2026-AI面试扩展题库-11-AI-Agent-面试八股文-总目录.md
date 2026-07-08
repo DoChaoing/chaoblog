@@ -21,7 +21,7 @@ tags:
 
 # AI Agent 面试八股文 -- 总目录
 
-![什么是AI Agent](../../comics/01-什么是Agent.png)
+![什么是AI Agent](/comics/01-什么是Agent.png)
 
 > 本目录包含 9 大模块的 AI Agent 面试八股文，覆盖从基础概念到工程实践的完整知识体系。每个模块包含：概念解释、原理详解、面试问题、标准答案、追问应对、代码示例。合计 **200+ 道面试题**。
 
@@ -92,10 +92,10 @@ tags:
 
 | 漫画 | 对应模块 |
 |------|----------|
-| ![ReAct](../../comics/02-ReAct循环.png) | 02-核心框架：ReAct 循环 |
-| ![RAG](../../comics/03-RAG流程.png) | 03-RAG 技术：检索增强生成 |
-| ![多Agent](../../comics/04-多Agent协作.png) | 06-多智能体：协作模式 |
-| ![记忆](../../comics/05-记忆系统.png) | 05-记忆系统：短期 vs 长期 |
+| ![ReAct](/comics/02-ReAct循环.png) | 02-核心框架：ReAct 循环 |
+| ![RAG](/comics/03-RAG流程.png) | 03-RAG 技术：检索增强生成 |
+| ![多Agent](/comics/04-多Agent协作.png) | 06-多智能体：协作模式 |
+| ![记忆](/comics/05-记忆系统.png) | 05-记忆系统：短期 vs 长期 |
 
 ## 博客化复习建议
 

@@ -1586,12 +1586,9 @@ AI/ML类：
 
 ---
 
-**上一模块：** [多Agent系统](../13-multi-agent-systems/)
-**下一模块：** [进阶主题](../15-advanced-topics/)
 
 ---
 
-[返回目录 →](../../README.md)
 
 ## 十、OWASP MCP Top 10 安全风险（2026 Beta）
 

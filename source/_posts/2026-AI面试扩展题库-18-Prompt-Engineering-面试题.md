@@ -1899,12 +1899,9 @@ response = anthropic.messages.create(
 
 ---
 
-**上一模块：** [基础概念](../01-basic-concepts/)
-**下一模块：** [RAG 系统](../03-rag-system/)
 
 ---
 
-[返回目录 →](../../README.md)
 
 ## 博客化复习建议
 

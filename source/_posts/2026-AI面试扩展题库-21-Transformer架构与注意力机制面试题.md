@@ -1388,12 +1388,9 @@ Mamba（选择性）：h_t = A(x_t)h_{t-1} + B(x_t)x_t  ← 输入决定参数
 
 ---
 
-**上一模块：** [RAG 系统](../03-rag-system/)
-**下一模块：** [AI Agent 基础](../05-ai-agent-basics/)
 
 ---
 
-[返回目录 →](../../README.md)
 
 ## 博客化复习建议
 

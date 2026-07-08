@@ -42,6 +42,9 @@ nav:
     - label: Tags
       icon: tags
       url: /tags/
+    - label: AI 学习
+      icon: graduation-cap
+      url: /ai-learning/
     - label: About
       icon: user
       url: /about.html

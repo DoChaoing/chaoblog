@@ -18,7 +18,7 @@ tags:
 
 # 核心框架（AI Agent 面试八股文 · 模块二）
 
-![ReAct循环](../../comics/02-ReAct循环.png)
+![ReAct循环](/comics/02-ReAct循环.png)
 
 > 面向零基础读者：本模块系统梳理主流 Agent「推理—行动—编排」框架。建议先理解 **ReAct** 的「一步想、一步做」，再对比 **Plan-and-Execute** 的「先想全局、再分步做」，最后把 **LangChain / LangGraph / 多 Agent** 当作「工程落地方式」来记忆。
 

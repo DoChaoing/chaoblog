@@ -18,7 +18,7 @@ tags:
 
 # 01 · AI Agent 基础概念（面试八股文）
 
-![什么是AI Agent](../../comics/01-什么是Agent.png)
+![什么是AI Agent](/comics/01-什么是Agent.png)
 
 > 面向零基础读者的系统梳理：每个知识点均包含「概念 + 原理 + 面试问答 + 追问 + 代码（如适用）」。建议配合动手写一个小 Agent 循环加深理解。
 

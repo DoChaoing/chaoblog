@@ -169,14 +169,103 @@
     window.addEventListener("resize", resize);
   }
 
+  function fixPostNavigation() {
+    var nav = document.querySelector(".post-navigation");
+    if (!nav || nav.dataset.nfFixed === "true") return;
+
+    var previousBox = nav.querySelector(".nav-previous");
+    var nextBox = nav.querySelector(".nav-next");
+    var themeNext = previousBox ? previousBox.querySelector("a") : null;
+    var themePrev = nextBox ? nextBox.querySelector("a") : null;
+    var pageTitle = document.querySelector("h1.kratos-page-title, .kratos-page-title");
+    var currentSeries = getSeries(pageTitle ? pageTitle.textContent : "");
+
+    function getSeries(title) {
+      var series = ["AI 面试扩展题库", "AI 系统学习路线", "AI 面试知识库"];
+      for (var i = 0; i < series.length; i++) {
+        if (title.indexOf(series[i]) !== -1) return series[i];
+      }
+      return "";
+    }
+
+    function snapshot(link) {
+      return link
+        ? {
+            href: link.getAttribute("href") || "#",
+            title: (link.getAttribute("title") || "").trim()
+          }
+        : null;
+    }
+
+    function sameSeries(source) {
+      if (!source || !currentSeries) return source;
+      return source.title.indexOf(currentSeries) !== -1 ? source : null;
+    }
+
+    function setLink(link, source, label, direction) {
+      if (!link || !source) return;
+      link.setAttribute("href", source.href);
+      link.setAttribute("title", source.title);
+      if (direction === "left") {
+        link.innerHTML = '<i class="fa fa-angle-left"></i> ' + label;
+      } else {
+        link.innerHTML = label + ' <i class="fa fa-angle-right"></i>';
+      }
+    }
+
+    function hideBox(box) {
+      if (!box) return;
+      box.style.display = "none";
+    }
+
+    var nextSnapshot = sameSeries(snapshot(themeNext));
+    var prevSnapshot = sameSeries(snapshot(themePrev));
+
+    if (prevSnapshot && nextSnapshot) {
+      setLink(themeNext, prevSnapshot, "上一篇", "left");
+      setLink(themePrev, nextSnapshot, "下一篇", "right");
+    } else if (prevSnapshot) {
+      hideBox(previousBox);
+      nextBox.className = "nav-previous clearfix";
+      setLink(themePrev, prevSnapshot, "上一篇", "left");
+    } else if (nextSnapshot) {
+      if (nextBox) hideBox(nextBox);
+      previousBox.className = "nav-next clearfix";
+      setLink(themeNext, nextSnapshot, "下一篇", "right");
+    } else {
+      hideBox(previousBox);
+      hideBox(nextBox);
+    }
+
+    nav.dataset.nfFixed = "true";
+  }
+
+  function watchPostNavigation() {
+    fixPostNavigation();
+    window.setTimeout(fixPostNavigation, 120);
+    window.setTimeout(fixPostNavigation, 600);
+
+    if (!window.MutationObserver) return;
+    var observer = new MutationObserver(function () {
+      var nav = document.querySelector(".post-navigation");
+      if (!nav || nav.dataset.nfFixed === "true") return;
+      fixPostNavigation();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
   ready(function () {
     ensureProgress();
     ensureSignalWidget();
     ensureStarfield();
     bindInspiration();
+    watchPostNavigation();
   });
+
+  window.addEventListener("load", fixPostNavigation);
 
   document.addEventListener("pjax:complete", function () {
     ensureSignalWidget();
+    watchPostNavigation();
   });
 })();

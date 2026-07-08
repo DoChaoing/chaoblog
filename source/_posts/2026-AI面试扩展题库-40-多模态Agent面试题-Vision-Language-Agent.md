@@ -922,8 +922,6 @@ class VoiceAgent:
 
 ---
 
-**上一模块：** [多模态AI基础](../11-multimodal-ai/)
-**下一模块：** [多Agent系统](../13-multi-agent-systems/)
 
 ---
 
@@ -1043,7 +1041,6 @@ response = qwen3_vl.chat(interleaved_content)
 
 ---
 
-[返回目录 →](../../README.md)
 
 ---
 

@@ -1496,12 +1496,9 @@ Agent Governance Toolkit负责"规则执行"（动态）
 
 ---
 
-**上一模块：** [框架与工具](../12-frameworks-tools/)
-**下一模块：** [MCP Skill 系统](../14-mcp-skill-systems/)
 
 ---
 
-[返回目录 →](../../README.md)
 
 ---
 

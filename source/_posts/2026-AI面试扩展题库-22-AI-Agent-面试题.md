@@ -2771,8 +2771,6 @@ class AutoGPT:
 
 ---
 
-**上一模块：** [Transformer 架构](../04-transformer-architecture/)
-**下一模块：** [向量索引优化](../06-vector-index-optimization/)
 
 ---
 
@@ -3264,7 +3262,6 @@ def monitor():
 
 ---
 
-[返回目录 →](../../README.md)]
 
 ### Q18: Voyager 是什么？为什么"具身智能终身学习"是2026年 Agent 最重要的方向之一？
 
