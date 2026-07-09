@@ -4,38 +4,24 @@ date: 2025-04-22 22:00:00
 type: "friends"
 ---
 
-## 🔗 Link Exchange
+## 友情链接
 
-Quality tech blogs and resources I recommend. Want to exchange links? Open an issue on [GitHub](https://github.com/DoChaoing).
+这里可以放置和 AI 学习、工程实践、开发者成长相关的站点。
 
----
+## 推荐类型
 
-### 🤖 AI & ML
+| 类型 | 说明 |
+|:--|:--|
+| AI 学习 | LLM、RAG、Agent、Prompt 相关教程 |
+| 工程实践 | 后端、前端、部署、可观测相关经验 |
+| 项目作品 | 有完整 README、架构图和复盘的项目 |
+| 面试准备 | 简历、系统设计、项目表达相关内容 |
 
-> Curated list of AI-focused blogs and resources.
+## 收录要求
 
-### 💻 Dev & Engineering
+- 内容原创；
+- 长期维护；
+- HTTPS 可访问；
+- 与 AI 或开发者成长相关。
 
-> Engineering blogs worth following.
-
----
-
-### 📬 Add Your Link
-
-Submit a PR or issue with this format:
-
-```yaml
-- name: Your Blog Name
-  link: https://your-blog.dev
-  avatar: https://avatar-url.png
-  desc: One-line description
-```
-
-**Requirements:**
-- Active tech blog (AI / dev / engineering)
-- Original content
-- HTTPS enabled
-
----
-
-*Let's build the future together.*
+如果后续需要，可以在这里补充具体站点链接。

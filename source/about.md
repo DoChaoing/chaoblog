@@ -4,64 +4,40 @@ date: 2025-04-22 22:00:00
 type: "about"
 ---
 
-## Hey, I'm Chao 👋
+## 关于本站
 
-> **`console.log("Hello, World! I build things with AI.")`**
+这里主要整理 AI 应用开发相关学习文档，重点关注从基础概念到项目实战，再到面试表达的完整路径。
 
-I'm an AI Engineer & Full-Stack Developer who's obsessed with pushing the boundaries of what's possible with artificial intelligence. This blog is my digital lab — where I document experiments, share insights, and explore the bleeding edge of tech.
+当前主线是：
 
----
-
-### 🧠 What I Do
-
-```
-┌─────────────────────────────────────────────────────┐
-│  SKILL_STACK                                         │
-│  ├── 🤖 AI/ML        → LLM · RAG · Agent · Prompt   │
-│  ├── 💻 Full-Stack    → React · Node · Python · Go   │
-│  ├── 🔧 DevOps       → Docker · K8s · CI/CD · Cloud  │
-│  └── 🎯 Focus        → AI-Native Development         │
-└─────────────────────────────────────────────────────┘
+```text
+AI 基础
+  -> Prompt
+  -> RAG
+  -> Agent
+  -> 工程化
+  -> 项目实战
+  -> 面试表达
 ```
 
-### 📡 What You'll Find Here
+## 内容方向
 
-| Category | Content |
-|:--------:|:--------|
-| **AI Tools** | Deep dives into Claude Code, Cursor, Copilot, and emerging tools |
-| **LLM Analysis** | Benchmarks, comparisons, and real-world testing of GPT, Claude, Gemini, Llama |
-| **AI Engineering** | RAG, Fine-tuning, Agent frameworks, Production ML |
-| **Tech Trends** | What's next in AI, dev tools, and the future of software |
+| 方向 | 说明 |
+|:--|:--|
+| AI 基础 | LLM、Token、上下文、模型能力边界 |
+| Prompt | 提示词、结构化输出、函数调用 |
+| RAG | 知识库、Embedding、向量数据库、检索优化 |
+| Agent | 工具调用、记忆、规划、MCP |
+| 工程化 | 评测、日志、成本、部署、安全 |
+| 项目实战 | RAG、Agent、AI 助手 |
+| 面试准备 | 简历、项目表达、系统设计、高频问题 |
 
-### 🛠️ Tech Arsenal
+## 目标
 
-```yaml
-daily_driver:
-  ide: Cursor + Claude Code
-  terminal: zsh + tmux
-  ai_models: [Claude Sonnet 4, GPT-4o, Gemini 2.5 Pro]
-  languages: [TypeScript, Python, Go, Rust]
+这套文档希望帮助读者完成三件事：
 
-currently_exploring:
-  - AI Agent orchestration
-  - On-device LLM deployment
-  - Multi-modal AI applications
-```
+1. 建立 AI 应用开发知识体系；
+2. 做出可以展示和复盘的项目；
+3. 在面试中讲清楚自己的技术能力。
 
-### 📫 Connect
-
-```bash
-# Find me on the internet
-curl -s https://github.com/DoChaoing | jq '.projects[]'
-
-# Or just say hi
-open https://dochaoing.github.io
-```
-
----
-
-> *"The best way to predict the future is to invent it."* — Alan Kay
-
----
-
-**Tech Stack of This Blog:** [Hexo](https://hexo.io/) + [Cyberpunk2077 Theme](https://github.com/ceeyu/hexo-theme-cyberpunk2077) + [Giscus](https://giscus.app/) · Hosted on GitHub Pages
+入口：[AI 系统学习路线](/ai-learning/)

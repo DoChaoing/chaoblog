@@ -4,28 +4,22 @@ date: 2025-04-22 22:00:00
 type: "archive"
 ---
 
-## 📂 Archive
+## 归档
 
-All posts, organized by category.
+当前文章已经重新整理为 `AI 系统学习` 一个主线分类。
 
----
+## 阅读建议
 
-### Categories
+建议先从 [AI 系统学习路线](/ai-learning/) 开始，再按文章顺序阅读：
 
-```bash
-$ tree --dirsfirst
-
-AI Tools/        → Hands-on guides for AI dev tools & workflows
-AI Models/       → Deep analysis of LLMs and multimodal models  
-AI Trends/       → Industry trends, predictions & breaking news
-AI Engineering/  → RAG, Agent, fine-tuning & production ML
-AI Practice/     → Real-world AI integration & case studies
+```text
+01 AI 基础篇
+02 Prompt 篇
+03 RAG 篇
+04 Agent 篇
+05 工程化篇
+06 项目实战篇
+07 面试篇
 ```
 
----
-
-### Recent Posts
-
-Browse all posts below, or filter by tags on the sidebar.
-
-*Stay curious. Keep building.*
+归档页适合用来查看所有文章，系统学习请优先使用路线页。
