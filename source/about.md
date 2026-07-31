@@ -2,6 +2,7 @@
 title: ABOUT
 date: 2025-04-22 22:00:00
 type: "about"
+banner: /images/dao-about.png
 ---
 
 ## 关于本站

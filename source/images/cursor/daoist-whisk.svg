@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <!-- 小拂尘：木柄、金箍、白马尾尘穗 -->
+  <path d="m3.7 4.2 2.4-1 1 2.4 12 12-3.3 3.3-12-12-1-2.4z" fill="#9D3640" stroke="#FFF4D7" stroke-width=".9" stroke-linejoin="round"/>
+  <path d="m15.5 16.4 3.1-3.1 3.5 3.5-3.1 3.1z" fill="#E7BD62" stroke="#5B3540" stroke-width=".8" stroke-linejoin="round"/>
+  <path d="M20.2 16.1c4.2-1.4 7.6-.8 10.1 1.4M19 17.7c4.6-.5 8.4 1 10.6 4M17.7 19.1c3.8.7 6.9 3 7.9 6.1M16.5 20.4c2.2 2.2 3.4 5 3.1 7.7" stroke="#35405B" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M20.2 16.1c4.2-1.4 7.6-.8 10.1 1.4M19 17.7c4.6-.5 8.4 1 10.6 4M17.7 19.1c3.8.7 6.9 3 7.9 6.1M16.5 20.4c2.2 2.2 3.4 5 3.1 7.7" stroke="#FFFDF5" stroke-width="1.65" stroke-linecap="round"/>
+</svg>

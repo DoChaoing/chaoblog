@@ -3,6 +3,7 @@ title: AI 系统学习路线
 date: 2026-07-08 09:00:00
 type: page
 layout: page
+banner: /images/dao-learning.png
 ---
 
 > 这是一套重新整理后的 AI 学习文档，从基础概念到项目实战，再到面试表达。目标不是堆资料，而是让读者按顺序建立知识体系、做出项目、讲清能力。

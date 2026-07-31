@@ -74,6 +74,9 @@ importers:
       hexo-theme-nexmoe:
         specifier: ^4.2.2
         version: 4.2.2(chokidar@3.6.0)
+      hexo-theme-reimu:
+        specifier: ^1.12.5
+        version: 1.12.5
       hexo-util:
         specifier: ^4.0.0
         version: 4.0.0
@@ -1319,6 +1322,9 @@ packages:
 
   hexo-theme-nexmoe@4.2.2:
     resolution: {integrity: sha512-/lO8Esa+SdwnKl8ZDpVb2zhf7y2LPdZzeEIPbsi1w+wQ14OKXfcR7PHOSJNjgvEblVnsmCxduVnihZF6he+GtA==}
+
+  hexo-theme-reimu@1.12.5:
+    resolution: {integrity: sha512-cQBb0EyQ/R3cTV6b4ZMtkbToqQaWhzgvj4OGzxtd3ZTdw7QGqkmo6DU07jUt5WljSrR8dDD4SRgZ0c5ndxCtYw==}
 
   hexo-util@2.7.0:
     resolution: {integrity: sha512-hQM3h34nhDg0bSe/Tg1lnpODvNkz7h2u0+lZGzlKL0Oufp+5KCAEUX9wal7/xC7ax3/cwEn8IuoU75kNpZLpJQ==}
@@ -3743,6 +3749,8 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
       - supports-color
+
+  hexo-theme-reimu@1.12.5: {}
 
   hexo-util@2.7.0:
     dependencies:
