@@ -43,7 +43,8 @@ subtitle:
 
 banner: /images/guochao-ai-hero.png
 favicon: https://avatars.githubusercontent.com/u/16796652
-avatar: https://avatars.githubusercontent.com/u/16796652
+# Reimu reads this file from source/_data/avatar/ and publishes it as /avatar/.
+avatar: avatar-female-daoist.png
 cover: /images/guochao-ai-hero.png
 toc: true
 toc_options:
