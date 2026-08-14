@@ -18,6 +18,9 @@ menu:
   - name: AI 学习
     url: /ai-learning/
     icon: /images/nav/formation.svg
+  - name: 学习资料
+    url: /2026/08/10/2026-大模型优质学习资料库/
+    icon: /images/nav/scroll.svg
   - name: about
     url: /about.html
     icon: /images/nav/daoist.svg
