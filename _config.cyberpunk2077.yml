@@ -1,0 +1,28 @@
+menu:
+  首页: /
+  归档: /archives/
+  分类: /categories/
+  标签: /tags/
+  AI 学习: /ai-learning/
+  关于: /about.html
+  友链: /friends.html
+
+social:
+  GitHub: https://github.com/dochaoing
+
+performance:
+  lazyload: true
+  minify: true
+  preload: true
+
+highlight:
+  theme: github-dark
+  line_number: true
+
+post:
+  show_updated: true
+  show_word_count: true
+  show_reading_time: true
+
+comments:
+  enable: false

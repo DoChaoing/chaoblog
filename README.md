@@ -1,6 +1,6 @@
 # Chao Blog
 
-一个以 AI 应用开发实践为主题的中文静态博客。站点使用 Hexo 和 Reimu 主题构建，保留单一主题配置及站点自身的内容、图片和样式。
+一个以 AI 应用开发实践为主题的中文静态博客。站点使用 Hexo 和 Cyberpunk 2077 主题构建，采用霓虹终端风格的响应式界面。
 
 ## 开发
 
@@ -22,9 +22,10 @@ pnpm deploy   # 部署到 _config.yml 中配置的远程仓库
 ## 内容与配置
 
 - `source/_posts/`：博客文章；新文章使用 `pnpm hexo new post <标题>` 创建。
-- `source/`：独立页面、站点图片、样式与浏览器端脚本。
+- `source/`：独立页面与站点图片。
 - `_config.yml`：Hexo 与部署配置。
-- `_config.reimu.yml`：唯一启用的主题 Reimu 的覆盖配置。
+- `_config.cyberpunk2077.yml`：Cyberpunk 2077 主题的站点覆盖配置。
+- `themes/cyberpunk2077/`：当前唯一保留并启用的主题。
 - `scaffolds/`：文章、页面与草稿的 Front Matter 模板。
 
 `public/`、`.deploy_git/` 和 `db.json` 均为本地生成文件，不纳入版本控制。

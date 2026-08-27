@@ -3,7 +3,6 @@ title: 从 0 到 1 的大模型学习路线
 date: 2026-08-10 12:05:00
 type: page
 layout: page
-banner: /images/dao-learning.png
 ---
 
 > 这不是“AI 名词大全”。路线从能看懂模型、能完成小实验开始，逐步走向应用、Agent 与推理部署。每一步都有代码、数据、评测或压测作为产出。

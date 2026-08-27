@@ -2,7 +2,6 @@
 title: FRIENDS
 date: 2025-04-22 22:00:00
 type: "friends"
-banner: /images/dao-friends.png
 ---
 
 ## 友情链接

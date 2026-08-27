@@ -2,7 +2,6 @@
 title: 标签
 date: 2026-07-31 12:05:00
 layout: page
-banner: /images/dao-tags.png
 ---
 
 ## 符箓索引
