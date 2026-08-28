@@ -12,6 +12,7 @@ social:
 category_descriptions:
   AI 学习路线: 从零基础开始，建立大模型原理、应用与部署的学习顺序
   AI 应用实战: 用 Python、API、RAG 和 Agent 完成可以运行与验收的项目
+  AI 面试: 用原理、项目证据和系统设计准备 AI 工程岗位面试
 
 performance:
   lazyload: true
