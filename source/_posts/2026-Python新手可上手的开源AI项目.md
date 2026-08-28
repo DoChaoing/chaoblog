@@ -1,15 +1,15 @@
 ---
-title: Python 新手可上手的 7 个开源 AI 项目：每个只做一个能验收的功能
+title: Python 新手学 AI：7 个两天内能做完的开源项目
 date: 2026-08-11 10:00:00
 categories:
-  - 大模型学习
+  - AI 应用实战
 tags:
   - Python
   - 开源项目
   - AI 入门
   - RAG
   - Agent
-description: 从本地模型调用到 RAG、Agent 和 API 服务，选择 7 个 Python 友好的开源项目，并为每一个定义可在一两天完成的最小成果。
+description: 为 Python 新手选择 7 个两天内可完成的 AI 开源项目，覆盖模型调用、Gradio、FastAPI、RAG、Agent 和模型原理。
 ---
 
 新手学 AI 最容易做错的一件事，是一上来就克隆一个“全栈 Agent 平台”。装好二十个依赖、填完三个 API Key，页面能聊天，却不知道模型、检索、工具和服务各自做了什么。

@@ -21,8 +21,11 @@ pnpm deploy   # 部署到 _config.yml 中配置的远程仓库
 
 ## 内容与配置
 
-- `source/_posts/`：博客文章；新文章使用 `pnpm hexo new post <标题>` 创建。
-- `source/`：独立页面与站点图片。
+- `source/start/`：新读者入口与目标分流。
+- `source/series/`：AI 工程入门、RAG、Agent 和推理部署专题。
+- `source/projects/`：项目进度、验证证据与复盘入口。
+- `source/_posts/`：已经发布的技术文章。
+- `source/`：其他独立页面与站点图片。
 - `_config.yml`：Hexo 与部署配置。
 - `_config.cyberpunk2077.yml`：Cyberpunk 2077 主题的站点覆盖配置。
 - `themes/cyberpunk2077/`：当前唯一保留并启用的主题。

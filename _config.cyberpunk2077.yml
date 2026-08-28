@@ -1,14 +1,17 @@
 menu:
   首页: /
-  归档: /archives/
-  分类: /categories/
-  标签: /tags/
   AI 学习: /ai-learning/
+  项目实战: /projects/
+  AI 面试: /interview/
+  归档: /archives/
   关于: /about.html
-  友链: /friends.html
 
 social:
   GitHub: https://github.com/dochaoing
+
+category_descriptions:
+  AI 学习路线: 从零基础开始，建立大模型原理、应用与部署的学习顺序
+  AI 应用实战: 用 Python、API、RAG 和 Agent 完成可以运行与验收的项目
 
 performance:
   lazyload: true

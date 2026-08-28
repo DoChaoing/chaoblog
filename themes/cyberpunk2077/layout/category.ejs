@@ -8,11 +8,9 @@
     <div class="container">
       <!-- 分類標題 -->
       <header class="category-header">
-        <a href="/" class="back-link">← 返回首頁</a>
+        <a href="<%- url_for('/') %>" class="back-link">← 返回首页</a>
         <h1 class="category-title">
-          <% if (page.category === 'C++ 基礎教學') { %>💻<% } %>
-          <% if (page.category === 'Flutter 30天') { %>📱<% } %>
-          <% if (page.category === '雲端資安') { %>🔐<% } %>
+          ◈
           <%= page.category %>
         </h1>
         <p class="category-count">共 <%= page.posts.length %> 篇文章</p>
@@ -20,13 +18,9 @@
       
       <!-- 文章列表 -->
       <div class="category-posts">
-        <% page.posts.sort('date', 1).forEach(function(post, index) { 
-          // 從標題中提取 Day 數字
-          var dayMatch = post.title.match(/day\s*(\d+)/i);
-          var dayNum = dayMatch ? dayMatch[1] : (index + 1);
-        %>
+        <% page.posts.sort('date', -1).forEach(function(post, index) { %>
           <article class="category-post-item">
-            <span class="post-number">Day <%= dayNum %></span>
+            <span class="post-number"><%= String(index + 1).padStart(2, '0') %></span>
             <a href="<%- url_for(post.path) %>" class="post-info">
               <h2 class="post-title"><%= post.title %></h2>
               <time class="post-date"><%= post.date.format('YYYY-MM-DD') %></time>
@@ -38,8 +32,8 @@
       <% if (page.total > 1) { %>
       <nav class="pagination">
         <%- paginator({
-          prev_text: '← 上一頁',
-          next_text: '下一頁 →',
+          prev_text: '← 上一页',
+          next_text: '下一页 →',
           mid_size: 1
         }) %>
       </nav>

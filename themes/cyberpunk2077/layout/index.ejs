@@ -28,49 +28,27 @@
       <section class="hero-section" data-animate="hero">
         <!-- Cyberpunk 2077 風格 Logo -->
         <div id="cyber-logo" class="cyber-logo">
-          <!-- 主標題: iThome -->
+          <!-- 站点标题 -->
           <div class="logo-main">
-            <!-- 青色層 (主層) -->
             <div class="logo-layer logo-cyan">
-              <span class="logo-char">i</span>
-              <span class="logo-char">T</span>
-              <span class="logo-char">h</span>
-              <span class="logo-char">o</span>
-              <span class="logo-char">m</span>
-              <span class="logo-char">e</span>
+              <% Array.from(config.title || 'BLOG').forEach(function(char) { %>
+                <span class="logo-char"><%= char %></span>
+              <% }); %>
             </div>
-            <!-- 粉色層 (Glitch 層) -->
             <div class="logo-layer logo-pink" aria-hidden="true">
-              <span class="logo-char">i</span>
-              <span class="logo-char">T</span>
-              <span class="logo-char">h</span>
-              <span class="logo-char">o</span>
-              <span class="logo-char">m</span>
-              <span class="logo-char">e</span>
+              <% Array.from(config.title || 'BLOG').forEach(function(char) { %>
+                <span class="logo-char"><%= char %></span>
+              <% }); %>
             </div>
           </div>
           
-          <!-- 副標題: Technical Article -->
+          <!-- 站点副标题 -->
           <div class="logo-sub">
             <div class="sub-bg"></div>
             <div class="sub-text sub-text-en">
-              <span class="sub-char">T</span>
-              <span class="sub-char">e</span>
-              <span class="sub-char">c</span>
-              <span class="sub-char">h</span>
-              <span class="sub-char">n</span>
-              <span class="sub-char">i</span>
-              <span class="sub-char">c</span>
-              <span class="sub-char">a</span>
-              <span class="sub-char">l</span>
-              <span class="sub-char">&nbsp;</span>
-              <span class="sub-char">A</span>
-              <span class="sub-char">r</span>
-              <span class="sub-char">t</span>
-              <span class="sub-char">i</span>
-              <span class="sub-char">c</span>
-              <span class="sub-char">l</span>
-              <span class="sub-char">e</span>
+              <% Array.from(config.subtitle || 'AI ENGINEERING NOTES').forEach(function(char) { %>
+                <span class="sub-char"><%= char === ' ' ? '\u00a0' : char %></span>
+              <% }); %>
             </div>
           </div>
           
@@ -86,62 +64,106 @@
         <!-- 描述文字 -->
         <p class="hero-desc">
           <span class="desc-bracket">[</span>
-          <span class="desc-text">三個系列，90 篇技術文章，從基礎到進階</span>
+          <span class="desc-text"><%= config.description || '记录 AI 学习与工程实践' %></span>
           <span class="desc-bracket">]</span>
         </p>
         
         <!-- 統計數據 -->
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-number" data-count="3">0</span>
-            <span class="stat-label">SERIES</span>
+            <span class="stat-number" data-count="<%= site.categories.length %>">0</span>
+            <span class="stat-label">分类</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-number" data-count="90">0</span>
-            <span class="stat-label">ARTICLES</span>
+            <span class="stat-number" data-count="<%= site.posts.length %>">0</span>
+            <span class="stat-label">文章</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-item">
-            <span class="stat-number" data-count="2024">0</span>
-            <span class="stat-label">YEAR</span>
+            <span class="stat-number" data-count="<%= site.posts.length ? site.posts.sort('date', -1).first().date.year() : new Date().getFullYear() %>">0</span>
+            <span class="stat-label">年份</span>
           </div>
         </div>
       </section>
       
-      <!-- 系列分類卡片 -->
+      <!-- 核心入口 -->
       <section class="series-section" data-animate="cards">
         <div class="section-header">
           <div class="section-line"></div>
           <h2 class="section-title">
             <span class="title-icon">◆</span>
-            選擇系列
+            AI 学习入口
+            <span class="title-icon">◆</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="series-grid">
+          <a href="<%- url_for('/ai-learning/') %>" class="series-card" data-card="cpp">
+            <div class="card-glow"></div><div class="card-border"></div>
+            <div class="card-content">
+              <div class="card-icon"><span aria-hidden="true">01</span></div>
+              <h3 class="card-title">零基础学 AI</h3>
+              <p class="card-desc">先明确目标，再按路线完成第一个可验证的学习成果</p>
+              <div class="card-footer"><div class="card-tag"><span class="tag-dot"></span>LEARNING PATH</div><div class="card-arrow"><span>开始</span></div></div>
+            </div><div class="card-hologram"></div>
+          </a>
+          <a href="<%- url_for('/projects/') %>" class="series-card" data-card="flutter">
+            <div class="card-glow"></div><div class="card-border"></div>
+            <div class="card-content">
+              <div class="card-icon"><span aria-hidden="true">02</span></div>
+              <h3 class="card-title">AI 项目实战</h3>
+              <p class="card-desc">用 Python、RAG 和 Agent 做出能够运行与验收的项目</p>
+              <div class="card-footer"><div class="card-tag"><span class="tag-dot"></span>BUILD & VERIFY</div><div class="card-arrow"><span>查看</span></div></div>
+            </div><div class="card-hologram"></div>
+          </a>
+          <a href="<%- url_for('/interview/') %>" class="series-card" data-card="security">
+            <div class="card-glow"></div><div class="card-border"></div>
+            <div class="card-content">
+              <div class="card-icon"><span aria-hidden="true">03</span></div>
+              <h3 class="card-title">AI 面试准备</h3>
+              <p class="card-desc">从原理、项目表达和系统设计三个层面准备技术面试</p>
+              <div class="card-footer"><div class="card-tag"><span class="tag-dot"></span>INTERVIEW</div><div class="card-arrow"><span>准备</span></div></div>
+            </div><div class="card-hologram"></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 真实分类卡片 -->
+      <section class="series-section" data-animate="cards">
+        <div class="section-header">
+          <div class="section-line"></div>
+          <h2 class="section-title">
+            <span class="title-icon">◆</span>
+            内容分类
             <span class="title-icon">◆</span>
           </h2>
           <div class="section-line"></div>
         </div>
         
         <div class="series-grid">
-          <a href="<%- url_for('/categories/C-基礎教學/') %>" class="series-card" data-card="cpp">
+          <% var cardStyles = ['cpp', 'flutter', 'security']; %>
+          <% site.categories.sort('name').forEach(function(category, index) { %>
+          <a href="<%- url_for(category.path) %>" class="series-card" data-card="<%= cardStyles[index % cardStyles.length] %>">
             <div class="card-glow"></div>
             <div class="card-border"></div>
             <div class="card-content">
               <div class="card-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="2" y="3" width="20" height="14" rx="2"/>
-                  <path d="M8 21h8M12 17v4"/>
-                  <path d="M7 8l3 3-3 3M12 14h4"/>
+                  <path d="M4 4h16v16H4z"/>
+                  <path d="M8 9h8M8 13h8M8 17h5"/>
                 </svg>
               </div>
-              <h3 class="card-title">C++ 基礎教學</h3>
-              <p class="card-desc">從零開始學習 C++ 程式設計，涵蓋基礎語法、資料結構與演算法</p>
+              <h3 class="card-title"><%= category.name %></h3>
+              <p class="card-desc"><%= (theme.category_descriptions && theme.category_descriptions[category.name]) || ('查看“' + category.name + '”分类下的全部文章') %></p>
               <div class="card-footer">
                 <div class="card-tag">
                   <span class="tag-dot"></span>
-                  30 篇文章
+                  <%= category.posts.length %> 篇文章
                 </div>
                 <div class="card-arrow">
-                  <span>進入</span>
+                  <span>进入</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                   </svg>
@@ -150,63 +172,7 @@
             </div>
             <div class="card-hologram"></div>
           </a>
-          
-          <a href="<%- url_for('/categories/Flutter-30天/') %>" class="series-card" data-card="flutter">
-            <div class="card-glow"></div>
-            <div class="card-border"></div>
-            <div class="card-content">
-              <div class="card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <rect x="5" y="2" width="14" height="20" rx="2"/>
-                  <path d="M12 18h.01"/>
-                  <path d="M9 6h6M9 10h6"/>
-                </svg>
-              </div>
-              <h3 class="card-title">Flutter 30天</h3>
-              <p class="card-desc">使用 Flutter 與 Dart 開發跨平台應用程式</p>
-              <div class="card-footer">
-                <div class="card-tag">
-                  <span class="tag-dot"></span>
-                  30 篇文章
-                </div>
-                <div class="card-arrow">
-                  <span>進入</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="card-hologram"></div>
-          </a>
-          
-          <a href="<%- url_for('/categories/雲端資安/') %>" class="series-card" data-card="security">
-            <div class="card-glow"></div>
-            <div class="card-border"></div>
-            <div class="card-content">
-              <div class="card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="M9 12l2 2 4-4"/>
-                </svg>
-              </div>
-              <h3 class="card-title">雲端資安</h3>
-              <p class="card-desc">雲端安全、滲透測試與資安防護實戰</p>
-              <div class="card-footer">
-                <div class="card-tag">
-                  <span class="tag-dot"></span>
-                  30 篇文章
-                </div>
-                <div class="card-arrow">
-                  <span>進入</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="card-hologram"></div>
-          </a>
+          <% }); %>
         </div>
       </section>
       

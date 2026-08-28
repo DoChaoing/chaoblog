@@ -6,7 +6,7 @@
   
   <main class="site-main">
     <div class="container">
-      <h1 class="archive-title animate-fade-in-up">文章總覽</h1>
+      <h1 class="archive-title animate-fade-in-up">文章总览</h1>
       
       <% if (page.posts.length) { %>
         <% var last; %>
@@ -27,15 +27,15 @@
         <% }); %>
         </div>
       <% } else { %>
-        <p>還沒有文章</p>
+        <p>还没有文章</p>
       <% } %>
       
       <!-- 分頁導航 -->
       <% if (page.total > 1) { %>
         <nav class="pagination">
           <%- paginator({
-            prev_text: '← 上一頁',
-            next_text: '下一頁 →',
+            prev_text: '← 上一页',
+            next_text: '下一页 →',
             mid_size: 2,
             end_size: 1
           }) %>

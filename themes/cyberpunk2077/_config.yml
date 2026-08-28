@@ -1,15 +1,21 @@
 # Cyberpunk2077 Theme 配置
 
-# 網站信息
+# 网站导航
 menu:
-  首頁: /
-  文章總覽: /archives
-  關於: /about
+  首页: /
+  AI 学习: /ai-learning/
+  项目实战: /projects/
+  AI 面试: /interview/
+  归档: /archives/
+  关于: /about.html
 
-# 社交連結
+# 社交链接
 social:
-  GitHub: https://github.com/ceeyu
-  iThome: https://ithelp.ithome.com.tw/users/20151593
+  GitHub: https://github.com/dochaoing
+
+category_descriptions:
+  AI 学习路线: 从零基础开始，建立大模型原理、应用与部署的学习顺序
+  AI 应用实战: 用 Python、API、RAG 和 Agent 完成可以运行与验收的项目
 
 # 性能優化
 performance:
