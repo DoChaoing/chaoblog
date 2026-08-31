@@ -24,6 +24,10 @@ description: 在 Apple 芯片 Mac 上安装 ComfyUI，先生成一张赛博朋�
   → 导出 MP4 并检查画面稳定性
 ```
 
+![Mac 上从提示词、生图、首帧到视频导出的完整流程](/images/ai-media/mac-ai-image-video-pipeline.png)
+
+*流程示意：先让单张图片的主体与构图稳定，再把它作为第一帧生成视频，最后导出 MP4。*
+
 主工具选择 ComfyUI Desktop。它把模型推理拆成可视化节点，图片和视频可以共用同一套模型管理与工作流机制。
 
 ## 一、先判断本地生成是否适合你的 Mac
@@ -64,6 +68,10 @@ brew install comfyui
 - **Load Checkpoint**：选择图片模型；
 - **CLIP Text Encode**：填写正向或负向提示词；
 - **Run / Queue**：执行工作流，快捷键通常是 `Cmd + Enter`。
+
+![节点式图片生成工作流示意图](/images/ai-media/comfyui-image-workflow.png)
+
+*节点关系示意：模型和提示词进入采样器，生成结果交给保存节点。实际 ComfyUI 界面会包含更多编码、Latent 和 VAE 节点。*
 
 ## 三、第一部分：生成一张图片
 
@@ -257,6 +265,10 @@ ComfyUI/output/
 
 不要同时提高分辨率、帧数和 Batch。视频总像素量大致随“宽 × 高 × 帧数”增长，三个参数一起增加会迅速放大资源需求。
 
+![Mac 视频生成保守参数与过载参数对比](/images/ai-media/mac-video-memory-comparison.png)
+
+*第一次运行应从低分辨率、少帧数、Batch 1 开始。图中的参数用于解释资源增长关系，不代表所有视频模型都接受完全相同的尺寸和帧数。*
+
 ## 七、图片与视频提示词模板
 
 图片提示词：
@@ -336,4 +348,3 @@ Mac 上生成图片和视频的可靠路线是：
 - [ComfyUI：LTX-Video 示例](https://docs.comfy.org/tutorials/video/ltxv)
 - [Hugging Face Diffusers：Apple Silicon MPS](https://huggingface.co/docs/diffusers/main/optimization/mps)
 - [Lightricks：LTX-Video](https://github.com/Lightricks/LTX-Video)
-
